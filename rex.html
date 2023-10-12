@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Página HTML</title>
+    <script>
+        function moverImagen() {
+            const imagen = document.getElementById('miImagen');
+            let posicionActual = parseInt(imagen.style.left) || 0;
+            posicionActual += 10;
+            imagen.style.left = posicionActual + 'px';
+        }
+
+        setInterval(moverImagen, 500);
+    </script>
+</head>
+<body>
+    <img id="miImagen" src="rex.png" style="position: absolute; left: 0; top: 0;" />
+</body>
+</html>
